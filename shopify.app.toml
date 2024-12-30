@@ -2,7 +2,7 @@
 
 client_id = "1d0045571748bef7d47d1af82f1e7163"
 name = "Discount Study Rust Version"
-handle = "build-a-discount-function"
+handle = "discount-study-rust-version"
 application_url = "https://costa-tariff-quarter-mega.trycloudflare.com"
 embedded = true
 
