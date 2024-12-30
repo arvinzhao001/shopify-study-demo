@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "7e1ce6ae588ac87953ac011795fbecb9"
-name = "build-a-discount-function"
+client_id = "1d0045571748bef7d47d1af82f1e7163"
+name = "Discount Study Rust Version"
 handle = "build-a-discount-function"
 application_url = "https://costa-tariff-quarter-mega.trycloudflare.com"
 embedded = true
