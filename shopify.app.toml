@@ -8,7 +8,7 @@ embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-dev_store_url = "quickstart-3a22a586.myshopify.com"
+dev_store_url = "najian-develop.myshopify.com"
 include_config_on_deploy = true
 
 # [START discount-allocator.access_scopes]
