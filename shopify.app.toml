@@ -3,7 +3,7 @@
 client_id = "1d0045571748bef7d47d1af82f1e7163"
 name = "Discount Study Live Version"
 handle = "discount-study-live-version"
-application_url = "http://47.76.174.219"
+application_url = "https://47.76.174.219"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products, write_discounts, write_discounts_allocator_functions, 
 
 [auth]
 redirect_urls = [
-  "http://47.76.174.219/auth/callback",
-  "http://47.76.174.219/auth/shopify/callback",
-  "http://47.76.174.219/api/auth/callback"
+  "https://47.76.174.219/auth/callback",
+  "https://47.76.174.219/auth/shopify/callback",
+  "https://47.76.174.219/api/auth/callback"
 ]
 
 [webhooks]

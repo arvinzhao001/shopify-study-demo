@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "ea54dde640f9d6ea850cf83ad9da5c13"
-application_url = "https://childrens-daddy-strictly-prospective.trycloudflare.com"
+application_url = "https://masters-transmit-modules-interactive.trycloudflare.com"
 embedded = true
 name = "Discount Study Dev Version"
 handle = "discount-study-dev-version"
@@ -20,9 +20,9 @@ scopes = "write_products, write_discounts, write_discounts_allocator_functions, 
 
 [auth]
 redirect_urls = [
-  "https://childrens-daddy-strictly-prospective.trycloudflare.com/auth/callback",
-  "https://childrens-daddy-strictly-prospective.trycloudflare.com/auth/shopify/callback",
-  "https://childrens-daddy-strictly-prospective.trycloudflare.com/api/auth/callback"
+  "https://masters-transmit-modules-interactive.trycloudflare.com/auth/callback",
+  "https://masters-transmit-modules-interactive.trycloudflare.com/auth/shopify/callback",
+  "https://masters-transmit-modules-interactive.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
