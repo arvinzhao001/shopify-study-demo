@@ -1,8 +1,8 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "1d0045571748bef7d47d1af82f1e7163"
-name = "Discount Study Rust Version"
-handle = "discount-study-rust-version"
+name = "Discount Study Live Version"
+handle = "discount-study-live-version"
 application_url = "http://47.76.174.219"
 embedded = true
 
