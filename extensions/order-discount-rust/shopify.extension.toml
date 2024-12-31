@@ -18,5 +18,5 @@ description = "t:description"
   watch = [ "src/**/*.rs" ]
 
   [extensions.ui.paths]
-  create = "/"
+  create = "/app/minimum-subtotal/:functionId/new"
   details = "/"
