@@ -1,0 +1,28 @@
+api_version = "2024-10"
+
+[[extensions]]
+# Change the merchant-facing name of the function extension in locales/en.default.json
+name = "t:name"
+handle = "product-discount-rust"
+type = "function"
+
+description = "t:description"
+
+  [[extensions.targeting]]
+  target = "purchase.product-discount.run"
+  input_query = "src/run.graphql"
+  export = "run"
+
+  [extensions.build]
+  command = "cargo wasi build --release"
+  path = "target/wasm32-wasi/release/product-discount-rust.wasm"
+  watch = [ "src/**/*.rs" ]
+
+  # [START discount-ui-extension.configuration]
+  [extensions.ui]
+  handle = "product-discount-rust-block"
+
+  [extensions.input.variables]
+  namespace = "$app:example-discounts--ui-extension"
+  key = "function-configuration"
+  # [END discount-ui-extension.configuration]
