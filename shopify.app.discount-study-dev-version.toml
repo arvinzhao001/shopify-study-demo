@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "ea54dde640f9d6ea850cf83ad9da5c13"
-application_url = "https://masters-transmit-modules-interactive.trycloudflare.com"
+client_id = "2ab89ef0ce1a4c6d6dd003abd5e21495"
+application_url = "https://pix-precipitation-bk-belle.trycloudflare.com"
 embedded = true
 name = "Discount Study Dev Version"
 handle = "discount-study-dev-version"
@@ -12,7 +12,7 @@ dev_store_url = "najian-develop.myshopify.com"
 automatically_update_urls_on_dev = true
 
 [webhooks]
-api_version = "2024-10"
+api_version = "2024-07"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
@@ -20,9 +20,9 @@ scopes = "write_products, write_discounts, write_discounts_allocator_functions, 
 
 [auth]
 redirect_urls = [
-  "https://masters-transmit-modules-interactive.trycloudflare.com/auth/callback",
-  "https://masters-transmit-modules-interactive.trycloudflare.com/auth/shopify/callback",
-  "https://masters-transmit-modules-interactive.trycloudflare.com/api/auth/callback"
+  "https://pix-precipitation-bk-belle.trycloudflare.com/auth/callback",
+  "https://pix-precipitation-bk-belle.trycloudflare.com/auth/shopify/callback",
+  "https://pix-precipitation-bk-belle.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
