@@ -1,3 +1,7 @@
+# Boot this app on Ali Cloud
+1. Start shopify app: npm run start
+2. Start reverse proxy ngnix: sudo service nginx restart
+3. Maybe need uninstall and re-install the app to shopify admin
 # Shopify app tutorial with admin extensions
 
 This app is a guide for adding extensions to a Shopify app.
