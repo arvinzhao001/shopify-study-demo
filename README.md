@@ -2,6 +2,17 @@
 1. Start shopify app: npm run start
 2. Start reverse proxy ngnix: sudo service nginx restart
 3. Maybe need uninstall and re-install the app to shopify admin
+
+# Build docker image & run docker, can check the Dockerfile
+1. Build the Docker Image: Open a terminal in the root directory of your project (where the Dockerfile is located) and run the following command to build the Docker image, This command will create a Docker image named my-node-app using the instructions in the Dockerfile.
+> docker build -t my-node-app .
+
+
+2. Run the Docker Container: After the image is built, you can run a container from the image with the following command,This command will start a container from the my-node-app image and map port 3000 of the container to port 3000 on your host machine.
+> docker run -p 3000:3000 my-node-app
+
+3. Access the Application: Open a web browser and navigate to http://localhost:3000 to access your Node.js application running inside the Docker container.
+
 # Shopify app tutorial with admin extensions
 
 This app is a guide for adding extensions to a Shopify app.
