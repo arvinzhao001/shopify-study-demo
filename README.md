@@ -1,12 +1,13 @@
 # Boot this app on Ali Cloud
-1. Start shopify app: npm run start
-2. Start reverse proxy ngnix: sudo service nginx restart
-3. Maybe need uninstall and re-install the app to shopify admin
+1. Push code change to git, then pull code to cloud server.
+2. Build docker image: docker build -t shopify-discount-study . 
+3. Start shopify app: docker run -p 3000:3000 shopify-discount-study
+4. Start reverse proxy ngnix: sudo service nginx restart
+5. Maybe need uninstall app from shopify admin and then re-install the app
 
 # Build docker image & run docker, can check the Dockerfile
 1. Build the Docker Image: Open a terminal in the root directory of your project (where the Dockerfile is located) and run the following command to build the Docker image, This command will create a Docker image named my-node-app using the instructions in the Dockerfile.
 > docker build -t my-node-app .
-
 
 2. Run the Docker Container: After the image is built, you can run a container from the image with the following command,This command will start a container from the my-node-app image and map port 3000 of the container to port 3000 on your host machine.
 > docker run -p 3000:3000 my-node-app
