@@ -3,17 +3,24 @@ FROM node:20-alpine
 EXPOSE 3000
 
 WORKDIR /app
+COPY package*.json ./
+
+# Install dependencies including dev dependencies for the build process
+RUN npm install
+
+# Copy the rest of the application code
 COPY . .
 
+# Set environment variable
 ENV NODE_ENV=production
 
-RUN npm install --omit=dev
-# Remove CLI packages since we don't need them in production by default.
-# Remove this line if you want to run CLI commands in your container.
-RUN npm remove @shopify/app @shopify/cli
+# Build the application
 RUN npm run build
 
-# You'll probably want to remove this in production, it's here to make it easier to test things!
+# Remove dev dependencies after the build
+RUN npm prune --production
+
+# Uncomment the following line if you want to remove the development SQLite database file
 # RUN rm -f prisma/dev.sqlite
 
 CMD ["npm", "run", "docker-start"]
