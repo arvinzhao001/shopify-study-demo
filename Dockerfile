@@ -15,6 +15,9 @@ COPY . .
 
 # Set environment variable
 ENV NODE_ENV=production
+ENV SHOPIFY_APP_URL=https://47.76.174.219
+ENV SHOPIFY_API_KEY=1d0045571748bef7d47d1af82f1e7163
+ENV SHOPIFY_API_SECRET=1378fcdc3e24463db471326f974b5691
 
 # Build the application
 RUN npm run build
